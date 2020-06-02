@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+#logo {
+    font-size: 40px;
+    font-family: 'Oswald';
+}
+
+#logo a {
+    transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover {
+    background: transparent;
+    color: #4f4b4a;
+    transform: scale(1.50, 1.50);
+  }
+
+.img{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    color: #30313A;
+    border-radius: 100px;
+    margin: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.text-gray {
+    font-weight: 500;
+    color: #4f4b4a;
+}
+
+.text-gold {
+    font-weight: 700;
+    color: #FFD700;
+}
+
+.text-white {
+    font-weight: 700;
+    color: #fff;
+}
+.text-orange {
+    font-weight: 700;
+    color: #F06E3D;
+}
+
+.text-black {
+    color: #000;
+}
+
+/* FULLPAGE.JS */
+#fp-nav{
+    margin-right: 5px;
+}
+
+#fp-nav ul li a span {
+    background: white;
+    margin-right: 10px;
+}
+
+.fp-slidesNav ul {
+    margin-left: 30px;
+}
+/* NAV */
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #fff;
+    transition: .5s ease;
+
+}
+
+.nav li.active {
+    border-bottom: 2px solid #4f4b4a;
+}
+
+.menu .li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: #4f4b4a;
+}
+
+
+/* HEADER */
+.header {
+    background: #F06E3D;
+}
+
+.header .title-container {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.header .title {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header .backend{
+    margin-top: 10px;
+    font-size: 35px
+}
+
+.header .icon-container {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: upDown 1s ease infinite;
+}
+
+/* ABOUT ME */
+.about-me h2{
+    font-size: 35px;
+    font-family: 'Oswald';
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: .3s ease all;
+}
+
+.about-me .information{
+    margin: 0 200px 0 200px;
+    font-family: 'Oswald';
+    font-size: 35px;
+}
+
+/* PROJECTS */
+
+.projects article {
+    background-position: center;
+    background-size: cover;
+}
+
+.projects article:nth-child(1){
+    background-image: url('media/stockPNG.png');
+}
+.projects article:nth-child(2){
+    background-image: url('media/mansory.png');
+}
+.projects article:nth-child(3){
+    background-image: url('media/blogscreenreal.png');
+}
+
+.projects .project-information{
+    margin: 0 30px;
+}
+
+.projects .project{
+    font-size: 45px;   
+}
+
+.projects .description{
+    font-size: 22px;
+}
+
+.projects .languages{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+
+
+.projects .project-img .projectImg{
+    width: 400px;
+    margin: 0 0 90px 300px;
+}
+
+.projects .project-icons a{
+    margin-right: 4px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.projects .project-icons .github i{color: #333}
+.projects .project-icons .external i{color: #333}
+
+
+
+/* FOOTER */
+.footer .text-gold{
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 9px;
+    margin-bottom: 40px;
+}
+
+.footer h2{
+    opacity: 0;
+    transition: .3s ease all;
+    font-family: 'Oswald';
+}
+
+.footer .social-media{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.footer .social-media a{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color: #30313A;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20px;
+}
+
+.footer .email i{color: #dd4b39}
+.footer .instagram i{color: #c13584}
+.footer .linkedin i{color: #007bb5}
+
+.footer .email:hover {background: #dd4b39}
+.footer .instagram:hover {background: #c13584}
+.footer .linkedin:hover {background: #007bb5}
+
+.footer .email:hover i{color: #fff}
+.footer .instagram:hover i{color: #fff}
+.footer .linkedin:hover i{color: #fff}
+
+/*Animations*/
+@keyframes upDown {
+    0% {
+        transform: translateY(20px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+
+/* SLIDE */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev{
+    top: 94%;
+}
+
+.fp-controlArrow.fp-prev{
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.fp-controlArrow.fp-next{
+    right: 50px;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent white;
+}
+
+
+/* Mediaquerys */
+@media screen and (max-width: 768px){
+    .menu li a,
+    .menu li.active a{
+        font-size: 18px;
+    }
+
+    .project{
+        font-size: 40px;
+    }
+
+    .languages{
+        font-size: 23px;
+    }
+
+    .footer h2{
+        font-size: 15px;
+    }
+
+    .footer .social-media{
+        font-size: 30px;
+    }
+
+    .footer .social-media a{
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer .text-white{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .header .title{
+        font-size: 60px;
+    }
+
+    .project-information{
+        position: absolute;
+        top: 70%;
+    }
+
+    .fp-controlArrow.fp-next{
+        left: 100px;
+    }
+
+    .fp-controlArrow.fp-prev{
+        left: 25%;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    
+    .nav{
+        display: block;
+        text-align: center;
+    }
+
+    .nav a{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu li a,
+    .menu li.active a{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .projects .project{
+        font-size: 30px;
+    }
+
+    .footer .text-white{
+        font-size: 18px;
+    }
+}
